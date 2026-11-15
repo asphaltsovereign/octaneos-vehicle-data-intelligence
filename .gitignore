@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+node_modules/
+dist/
+.env
+.DS_Store
+.env
+backend/.env
+*.env.local
+
+# Sentinel ML artifacts and downloaded public datasets. The exact submission
+# candidate is intentionally allowed so GitHub/deployment can reproduce runtime.
+backend/artifacts/*
+!backend/artifacts/sentinel_submission_frozen/
+!backend/artifacts/sentinel_submission_frozen/**
+backend/data/raw_ved/
+backend/data/prepared_ved/
+*.7z
+.local-postgres/
+.superpowers/
+verification/*.log
+.browser/
+*.bundle

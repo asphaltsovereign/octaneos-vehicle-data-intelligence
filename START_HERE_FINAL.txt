@@ -1,0 +1,26 @@
+OCTANEOS SENTINEL V3.4 — FINAL HACKATHON BUILD
+
+FASTEST PATH IF YOUR CURRENT V3.4 ALREADY RUNS:
+1) Use OctaneOS_V3.4_Hackathon_Polish_PATCH.zip instead of replacing the whole project.
+2) Extract the patch ZIP.
+3) In PowerShell, enter the extracted patch folder.
+4) Run:
+   Set-ExecutionPolicy -Scope Process Bypass
+   .\APPLY_FINAL_POLISH.ps1
+5) After it finishes, run:
+   cd "C:\Users\awamo\Downloads\OctaneOS_Sentinel_V3.4_Hackathon_Submission\octaneos-sentinel-v3"
+   .\START_OCTANEOS_WINDOWS.bat
+6) Open http://127.0.0.1:8000
+
+The patch automatically backs up the three files it modifies, builds the React frontend,
+and runs presentation regression tests. It also checks two known prior-work locations for
+the exact frozen V0.5 model. It restores the model ONLY if SHA-256 exactly matches:
+3ee122b87fa5cadfaaa8bd5d5aff44734cddc96cc81cf32e396b6c1e5f692542
+
+If the verified model cannot be found, the application stays operational but clearly labels
+the runtime LOCAL FALLBACK. No substitute or fabricated model is used.
+
+IMPORTANT FOR THE FULL SOURCE ZIP:
+The included dist/ exists only so the packaged backend smoke tests have a static bundle.
+Run APPLY_FINAL_POLISH.ps1 or START_OCTANEOS_WINDOWS.bat before judging; npm run build replaces
+that bundle with the polished React source in frontend/src. Render also rebuilds it automatically.

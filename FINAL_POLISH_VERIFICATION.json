@@ -1,0 +1,10 @@
+{
+  "revision": "2026-09-10-command-center-polish",
+  "backend_regression_suite": "39 passed",
+  "presentation_regression_suite": "5 passed",
+  "tsx_transpile_diagnostics": 0,
+  "python_compileall": "passed",
+  "frontend_production_build_in_packaging_environment": "not run: npm registry unavailable in packaging sandbox; APPLY_FINAL_POLISH.ps1 runs npm run build on the user's Windows installation",
+  "frozen_model_in_uploaded_v3_4_zip": false,
+  "model_policy": "Never substitute or fabricate a frozen model. The patch attempts recovery only if the prior V0.5 artifact matches the exact expected SHA-256. Otherwise the UI remains clearly labelled LOCAL FALLBACK."
+}

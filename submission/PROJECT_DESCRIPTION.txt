@@ -1,0 +1,14 @@
+OCTANEOS SENTINEL: EVIDENCE-FIRST AI FOR VEHICLE TELEMETRY
+
+One-line pitch
+An explainable, local-first AI workstation that converts vehicle telemetry into bounded anomaly evidence, inspection steps, and claim-safe reports.
+
+Project description
+OctaneOS Sentinel helps engineers screen vehicle telemetry without turning a statistical anomaly into an unsupported diagnosis. A quality gate first checks whether an uploaded CSV is suitable for analysis. The validated architecture uses a checksum-locked multivariate ensemble over synchronized behavioural windows; if that frozen binary is not packaged, the application explicitly switches to a labelled local fallback rather than claiming trained-model execution. Deterministic automotive rules convert deviations into testable hypotheses, retain contradictions, and recommend inspection steps. A safety layer blocks claims about ECU codes, AFR, injector condition, ignition timing, ethanol content, remaining useful life, and vehicle-specific health when the required signals or validation do not exist.
+
+The hackathon build includes a six-screen React workstation, FastAPI analysis service, controlled fault-injection lab, model card, provenance and SHA-256 evidence, CSV import, downloadable reports, and an optional language-model explanation layer. Core analysis runs locally; raw telemetry is excluded from cloud prompts and an instant deterministic fallback keeps the workflow operational offline.
+
+The frozen public passenger-car baseline used 40 training vehicles, 9 calibration vehicles, and 9 untouched test vehicles. It detected 158 of 207 supported controlled perturbation runs (76.33%) and 62 of 69 severe runs (89.86%). The untouched normal-window false-positive rate was 13.01% and injected-window F1 was 36.18%. These figures measure screening sensitivity under controlled perturbations, not component-diagnosis accuracy. The locked product path connects passive SAN-V1 motorcycle acquisition to vehicle-specific validation before any Yamaha R15 health claim.
+
+Suggested tags
+Applied AI, Machine Learning, Explainable AI, Agentic Workflow, Automotive Telemetry, Edge AI, Predictive Screening, Safety-Critical AI

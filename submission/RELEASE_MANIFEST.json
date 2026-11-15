@@ -1,0 +1,27 @@
+{
+  "project": "OctaneOS Sentinel V3",
+  "release": "3.4.0-hackathon-final",
+  "created_utc": "2026-09-10",
+  "verification": {
+    "backend_tests": "34 passed",
+    "dependency_check": "passed",
+    "python_compile": "passed",
+    "frontend_typecheck": "passed",
+    "frontend_production_build": "passed",
+    "secret_pattern_scan": "passed"
+  },
+  "presentation": {
+    "file": "OctaneOS_Sentinel_Hackathon_Deck_FINAL.pptx",
+    "slides": 9,
+    "sha256": "840b7d9bf10ecad69ebaac1f408a723a740219beb3aac3d030f5c5a2a6201a2e",
+    "native_chart_slide": 6
+  },
+  "required_external_artifact": {
+    "directory": "backend/artifacts/sentinel_submission_frozen",
+    "model_version": "sentinel-powertrain-baseline-0.5",
+    "bundle_file": "sentinel_baseline.joblib",
+    "expected_sha256": "3ee122b87fa5cadfaaa8bd5d5aff44734cddc96cc81cf32e396b6c1e5f692542",
+    "included_in_uploaded_sources": false
+  },
+  "truth_boundary": "Controlled perturbation results measure anomaly-screening sensitivity, not real-world component-failure diagnostic accuracy."
+}

@@ -1,0 +1,41 @@
+{
+  "source": "User-supplied Terminal 2 transcript captured on 2026-09-10",
+  "model": {
+    "model_version": "sentinel-powertrain-baseline-0.5",
+    "artifact_sha256": "3ee122b87fa5cadfaaa8bd5d5aff44734cddc96cc81cf32e396b6c1e5f692542",
+    "feature_count": 47,
+    "capability_signals": ["speed", "rpm", "maf", "engine_load"],
+    "training_vehicles": 40,
+    "calibration_vehicles": 9,
+    "test_vehicles": 9,
+    "decision_threshold": 0.4241655642122541,
+    "ensemble_weights": {"iforest": 0.1, "pca": 0.7, "robust_z": 0.2}
+  },
+  "validation": {
+    "untouched_normal_fpr": 0.1301,
+    "injected_window_precision": 0.4286,
+    "injected_window_recall": 0.313,
+    "injected_window_f1": 0.3618,
+    "injected_run_detection_rate": 0.7633,
+    "injected_run_experiments": 207,
+    "injected_run_detected": 158,
+    "severity": [
+      {"severity": "mild", "experiments": 69, "detected_experiments": 42, "window_recall": 0.1601, "injected_run_detection_rate": 0.6087},
+      {"severity": "medium", "experiments": 69, "detected_experiments": 54, "window_recall": 0.4077, "injected_run_detection_rate": 0.7826},
+      {"severity": "severe", "experiments": 69, "detected_experiments": 62, "window_recall": 0.3856, "injected_run_detection_rate": 0.8986}
+    ],
+    "claim_boundary": "Controlled synthetic perturbations measure anomaly sensitivity, not real-world component-failure diagnostic accuracy or remaining useful life."
+  },
+  "verification": {
+    "terminal_tests_passed": 20,
+    "release_tests_passed": 32,
+    "release_frontend_build": "passed",
+    "terminal_warning_count": 1
+  },
+  "excluded_claims": [
+    "Thermal-drift experiments were skipped because the frozen model does not declare temperature capability.",
+    "Voltage-degradation experiments were skipped because the frozen model does not declare battery-voltage capability.",
+    "Public VED passenger-car evidence is not Yamaha R15 V2 validation.",
+    "Run detection is sensitivity on controlled perturbations, not diagnostic accuracy."
+  ]
+}

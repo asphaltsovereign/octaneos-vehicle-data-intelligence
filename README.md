@@ -102,6 +102,6 @@ Resolved package versions in the supplied lockfiles include FastAPI **0.128.2**,
 
 This is an unchanged screenshot recovered from the **18 September Local 0.2** package. It contains intentionally synthetic demonstration records. It is not a new vehicle test or a newly captured browser run. [assets/README.md](assets/README.md) records its provenance.
 
-[data/samples/](data/samples/) contains synthetic examples with location fields removed. The originals under `samples/` are historical synthetic demonstrations; they are not SAN measurements. [docs/RELEASE_LINEAGE.md](docs/RELEASE_LINEAGE.md) explains source recovery and the preserved Git ancestor.
+[data/samples/](data/samples/) contains synthetic examples with location fields removed. The originals under `samples/` are historical synthetic demonstrations; they are not SAN measurements. [docs/RELEASE_LINEAGE.md](docs/RELEASE_LINEAGE.md) explains source recovery, the current publication commits and the earlier history retained in a Git bundle.
 
 Engineering portfolio: [Asphalt Sovereign](https://github.com/asphaltsovereign/automotive-engineering-portfolio).

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "browser": "Chromium",
+  "desktop": "1440x1000",
+  "mobile": "390x844",
+  "journey": "demo → empty overview → customer → vehicle → job → manual report → notes → local explanation → print → reviewed → closed → reload → passport → report register search/filter → invalid CSV rejection → synthetic CSV → signal selection/scrubber → counts → vehicle search → governance → mobile → logout",
+  "pageErrors": []
+}
